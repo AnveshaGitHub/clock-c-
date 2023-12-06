@@ -18,17 +18,37 @@ int main(){
     int tsec = (h*3600) + (m*60) + s;
     //cout << tsec;
 
-        for(int i=0; i<=tsec;i++){
+for(int i=0; i<=tsec;i++){
             if(sec<=tsec){
 
-            cout << sec;
+            
+            //cout << sec;
             Sleep(1000);
             system("cls");
-            sec++;
+
+
+            
                 if(sec == 60){
                         sec = 0;
                 min++;
+                
                  }
+
+
+            cout << "\n";
+            
+
+
+            if(min == 60){
+                    min = 0;
+                hour++;
+                
+                 }
+           
+            cout << hour <<  " : " ;
+            cout << min << " : " ;
+            cout << sec;
+            sec++;
             }
 
             
